@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Congratulation</title>
+    <meta name = "viewport" content = "width=device-width">
+    <meta charset="UFT-8">
+    <link rel="stylesheet" type="text/css" href="maker.css">
+</head>
+<section>
+    <h2>Chúc mừng </h2>
+    <p>Sau mấy tuần ôn tập thì  có điểm thi =))) ai đậu thì mới vô được trang web này .
+    </p>
+    <button href = "# " class="btn">Click here</button>
+
+    <div class="popup">
+        <h2>Chúc mừng thi đậu =))))</h2>
+        <b class="close">x</b>
+    </div>
+</section>
+
+<canvas id="my-canvas"></canvas>
+
+<script src="index.js"></script>
+<script>
+    let btn = document.querySelector('.btn');
+    let popup = document.querySelector('.popup');
+    let close = document.querySelector('.close');
+    let confe= document.querySelector('#my-canvas');
+    btn.onclick = function(){
+        popup.classList.add('active');
+        confe.classList.add('active');
+    }
+    close.onclick = function(){
+        popup.classList.remove('active');
+        confe.classList.remove('active');
+    }
+
+    var confettiSettings = { target: 'my-canvas' };
+   var confetti = new ConfettiGenerator(confettiSettings);
+   confetti.render();
+
+</script>
+</html>
