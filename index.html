@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <title>Congratulation</title>
-    <meta name = "viewport" content = "width=device-width">
-    <meta charset="UFT-8">
-    <link rel="stylesheet" type="text/css" href="maker.css">
-</head>
-<section>
-    </p>
-    <button href = "# " class="btn">Click here</button>
-
-    <div class="popup">
-        <h2>Congratulation for passing the essay </h2>
-        <b class="close">x</b>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv = "X-UA-Comatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Aquarium</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body> 
+  <div class = "hero">
+    <div class="navbar">
+      <img class="logo" src="image/logo.png">
+      <button type="button">SignUp</button> 
     </div>
-</section>
-
-<canvas id="my-canvas"></canvas>
-
-<script src="index.js"></script>
-<script>
-    let btn = document.querySelector('.btn');
-    let popup = document.querySelector('.popup');
-    let close = document.querySelector('.close');
-    let confe= document.querySelector('#my-canvas');
-    btn.onclick = function(){
-        popup.classList.add('active');
-        confe.classList.add('active');
-    }
-    close.onclick = function(){
-        popup.classList.remove('active');
-        confe.classList.remove('active');
-    }
-
-    var confettiSettings = { target: 'my-canvas' };
-   var confetti = new ConfettiGenerator(confettiSettings);
-   confetti.render();
-
-</script>
+    <div class="content">
+      <h3>HAHA</h3>
+      <h1>OCEAN LIFE </h1>
+      <button type="button" onclick="location.href='https://www.youtube.com/watch?v=hlwlM4a5rxg&t=4s'">EXPLORE</button>
+    </div>
+    <div class="side-bar">
+      <img class ="menu" src="image/menu.png">
+      <div class="social-links">  
+        <a href="https://www.youtube.com"><img src="image/facebook.png"></a>
+        <img src="image/yt.png">
+      </div>
+      <div class="useful-links">
+        <img src="image/info.png">
+        <img src="image/share.png">
+      </div>
+    </div>
+          <div class="fish">
+        <img class="f1" src="image/fish.png">
+        <img class="f2" src="image/fish.png">
+        <img class="f3" src="image/fish.png">
+        <img class="f4" src="image/fish.png">
+        <img class="f5" src="image/fish.png">
+      </div>
+  </div>
+  <div class="bubbles">
+      <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    
+  </div>
+  </body> 
 </html>
